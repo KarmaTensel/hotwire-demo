@@ -1,0 +1,17 @@
+<turbo-stream action="update" target="activity-frag-zero">
+    <template>
+        <%= button_to @new_greeting, "/activity/stream_greeting?message=#{@new_greeting == 'hi' ? 'bye' : 'hi'}" %>
+    </template>
+</turbo-stream>
+
+<turbo-stream action="replace" target="activity-frag-one">
+    <template>
+        <%= @new_greeting %>
+    </template>
+</turbo-stream>
+
+<turbo-stream action="replace" target="activity-frag-two">
+    <template>
+        <%= @new_greeting %>
+    </template>
+</turbo-stream>

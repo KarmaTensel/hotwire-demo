@@ -8,4 +8,10 @@ Rails.application.routes.draw do
       post :toggle
     end
   end
+
+  resources :activity do
+    collection do
+      post :stream_greeting
+    end
+  end
 end

@@ -1,0 +1,13 @@
+<turbo-frame id="activity-page">
+    <%= link_to @new_greeting, "/activity?message=#{@new_greeting}" %>
+</turbo-frame>
+
+<br>
+
+<div id="activity-frag-zero">
+    <%= button_to @new_greeting, "/activity/stream_greeting?message=#{@new_greeting}" %>
+</div>
+
+<div id="activity-frag-one">Idk</div>
+
+<div id="activity-frag-two">ydk</div>
