@@ -12,6 +12,14 @@ Rails.application.routes.draw do
   resources :activity do
     collection do
       post :stream_greeting
+      get :buy_now
+    end
+  end
+
+  resources :carts do
+    collection do
+      post :add_to_cart
+      post :remove_from_cart
     end
   end
 end
