@@ -1,5 +1,4 @@
 <ul class="flex items-center justify-center space-x-4 font-[sans-serif] mt-4">
-  <%= link_to activity_index_path(stepper: 'testimonial') do %>
       <li class="<%= @current_stepper == 'testimonial' ? 'text-white bg-gray-700' : 'text-gray-500 bg-gray-100' %> px-4 py-2 rounded-full text-sm tracking-wide font-bold cursor-pointer flex items-center">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-current mr-2" viewBox="0 0 511 511.999">
           <path
@@ -8,10 +7,8 @@
         </svg>
         Testimonial
       </li>
-      <% end %>
       <li class="text-gray-500 text-3xl">/</li>
 
-      <%= link_to activity_index_path(stepper: 'banner') do %>
       <li class="<%= @current_stepper == 'banner' ? 'text-white bg-gray-700' : 'text-gray-500 bg-gray-100' %> px-4 py-2 rounded-full text-sm tracking-wide font-bold cursor-pointer flex items-center">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-current mr-2" viewBox="0 0 512 512">
           <path
@@ -20,10 +17,8 @@
         </svg>
         Banner
       </li>
-      <% end %>
       <li class="text-gray-500 text-3xl">/</li>
 
-      <%= link_to activity_index_path(stepper: 'pricing') do %>
       <li class="<%= @current_stepper == 'pricing' ? 'text-white bg-gray-700' : 'text-gray-500 bg-gray-100' %> px-4 py-2 rounded-full text-sm tracking-wide font-bold cursor-pointer flex items-center">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-current mr-2" viewBox="0 0 24 24">
           <g fill-rule="evenodd" clip-rule="evenodd">
@@ -39,7 +34,6 @@
         </svg>
         Pricing
       </li>
-      <% end %>
     </ul>
     
     <%= render 'activity/static_content', stepper: @current_stepper %>
